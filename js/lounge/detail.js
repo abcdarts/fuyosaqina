@@ -7,7 +7,7 @@ $(function(){
       responsive: [
           {
             breakpoint: 786,
-            settings: "unslick"
+            // settings: "unslick"
           }
       ]
   });
