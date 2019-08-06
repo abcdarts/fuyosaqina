@@ -21,7 +21,7 @@ body {
  font-family: "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, YuGothic, Arial, "メイリオ", Meiryo, sans-serif;
  color: #555;
  line-height: 1.6em;
- background: #DAF4F8 url("../../img/main-bg.png") no-repeat center top;
+ background: #DAF4F8 url("/img/main-bg.png") no-repeat center top;
 }
 
 .overlay {
@@ -184,7 +184,7 @@ body {
  content: '';
  width: 26px;
  height: 26px;
- background: url("../../img/group.png") no-repeat center top;
+ background: url("/img/group.png") no-repeat center top;
  background-size: 26px 22px;
  position: absolute;
  top: 0;
@@ -196,7 +196,7 @@ body {
  content: '';
  width: 26px;
  height: 26px;
- background: url("../../img/cart.png") no-repeat center top;
+ background: url("/img/cart.png") no-repeat center top;
  background-size: 23px 21px;
  position: absolute;
  top: 0;
@@ -208,7 +208,7 @@ body {
  content: '';
  width: 26px;
  height: 26px;
- background: url("../../img/help-circle.png") no-repeat center top;
+ background: url("/img/help-circle.png") no-repeat center top;
  background-size: 24px 24px;
  position: absolute;
  top: 0;
@@ -776,6 +776,12 @@ body {
  border-radius: 8px;
 }
 
+.commonBlock__map {
+ width: 100%;
+ height: 300px;
+ border-radius: 8px;
+}
+
 @media screen and (min-width: 769px) {
  .commonAccordion:last-child {
   padding: 0 0 30px;
@@ -900,6 +906,22 @@ body {
 
 .area__block .area__accordion:last-child {
  border-bottom: 1px solid #DAF4F8;
+}
+
+.area__block .commonBlock__detailDataListTitle {
+ font-size: 14px;
+}
+
+.area__block .commonBlock__detailDataListTitle a {
+ text-decoration: none;
+ color: #73D4E6;
+ cursor: pointer;
+}
+
+.area__block .commonBlock__detailDataListDetail a {
+ text-decoration: none;
+ color: #73D4E6;
+ cursor: pointer;
 }
 
 .area__accordion {
@@ -1136,12 +1158,17 @@ body {
 
 @media screen and (min-width: 1024px) {
  .footer__snsItem {
-  width: 200px;
+  width: 130px;
+ }
+ .footer__snsItem:nth-of-type(4), .footer__snsItem:nth-of-type(5) {
+  padding-top: 0;
  }
 }
 
 @media screen and (min-width: 1024px) {
  .footer__sns {
+  display: flex;
+  align-items: baseline;
   width: 764px;
  }
 }
@@ -1181,6 +1208,43 @@ body {
  top: 50%;
  right: 20px;
  margin: -10px 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+ .qa__block {
+  padding: 0 30px 30px;
+ }
+}
+
+.qa__heading {
+ display: flex;
+ align-items: center;
+ color: #73D4E6;
+ font-weight: bold;
+ padding-bottom: 32px;
+}
+
+.qa__heading i {
+ margin-right: 32px;
+ padding: 4px 18px;
+ border-radius: 13px 13px 13px 0;
+ font-style: normal;
+ background: #73D4E6;
+ color: #fff;
+}
+
+.qa__txt {
+ display: flex;
+ align-items: baseline;
+}
+
+.qa__txt i {
+ margin-right: 32px;
+ padding: 4px 18px;
+ border-radius: 13px 13px 0 13px;
+ font-style: normal;
+ background: #555555;
+ color: #fff;
 }
 
 .display__pc {
