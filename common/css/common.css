@@ -21,7 +21,7 @@ body {
  font-family: "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, YuGothic, Arial, "メイリオ", Meiryo, sans-serif;
  color: #555;
  line-height: 1.6em;
- background: #DAF4F8 url("/img/main-bg.png") no-repeat center top;
+ background: #DAF4F8 url("../../img/main-bg.png") no-repeat center top;
 }
 
 .overlay {
@@ -184,7 +184,7 @@ body {
  content: '';
  width: 26px;
  height: 26px;
- background: url("/img/group.png") no-repeat center top;
+ background: url("../../img/group.png") no-repeat center top;
  background-size: 26px 22px;
  position: absolute;
  top: 0;
@@ -196,7 +196,7 @@ body {
  content: '';
  width: 26px;
  height: 26px;
- background: url("/img/cart.png") no-repeat center top;
+ background: url("../../img/cart.png") no-repeat center top;
  background-size: 23px 21px;
  position: absolute;
  top: 0;
@@ -208,7 +208,7 @@ body {
  content: '';
  width: 26px;
  height: 26px;
- background: url("/img/help-circle.png") no-repeat center top;
+ background: url("../../img/help-circle.png") no-repeat center top;
  background-size: 24px 24px;
  position: absolute;
  top: 0;
