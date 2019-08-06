@@ -19,8 +19,13 @@ $(function(){
 
     $('.js-accordion').on('click', function(e){
         e.preventDefault();
-        $(this).toggleClass('is-active');
-        $(this).next().slideToggle();
+        if($(this).hasClass('is-active')) {
+            $(this).next().slideUp();
+            $(this).removeClass('is-active');
+        } else {
+            $(this).next().slideDown();
+            $(this).addClass('is-active');
+        }
     });
 
     $('.js-tooltip li a').on('click', function(e){
@@ -46,7 +51,6 @@ $(function(){
                 'height': $('body').height()
             })
         }
-
     });
 
     $('.overlay').on('click', function(e){

@@ -8,147 +8,344 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="icon" type="image/png" sizes="32×32" href="../img/favicon.ico">
 <link rel="apple-touch-icon" sizes="152×152" href="../img/apple-touch-icon-152×152.png">
-<link rel="stylesheet" href="../css/common/reset.css">
-<link rel="stylesheet" href="../css/common/style.css">
+<link rel="stylesheet" href="../common/css/reset.css">
+<link rel="stylesheet" href="../common/css/common.css">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div class="headerWrap">
-            <a href="#" class="headerLogo"><img class="headerLogo__img" src="" alt="てすと"></a>
-            <ul class="headerNav">
-                <li><a href="#flg-mission" class="headerNav__anc">Mission</a></li>
-                <li><a href="#flg-vision" class="headerNav__anc">Vision</a></li>
-                <li><a href="#flg-member" class="headerNav__anc">Member</a></li>
-                <li><a href="#" class="headerNav__anc">Contact</a></li>
-            </ul>
-            <nav class="headerNav__drawer">
-                <div class="headerNav__drawer__bar">
-                    <a class="navbar_brand" href="#"></a>
-                    <div class="headerNav__toggle">
-                        <span class="headerNav__toggle__icon"></span>
-                        <span class="headerNav__toggle__icon"></span>
-                        <span class="headerNav__toggle__icon"></span>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
 
-    <div class="headerNav__menu">
-        <ul class="headerNav__menuWrap">
-            <li class="headerNav__menuWrap__list"><a href="#flg-mission">Mission</a></li>
-            <li class="headerNav__menuWrap__list"><a href="#flg-vision">Vision</a></li>
-            <li class="headerNav__menuWrap__list"><a href="#flg-member">Member</a></li>
-            <li class="headerNav__menuWrap__list"><a target="_blank" href="https://goo.gl/forms/tgdxiFTFvusD56eB3">Contact</a></li>
+    <div class="overlay"></div>
+    
+    <header class="header">
+        <div class="header__left">
+            <div class="header__leftInner">
+                <p class="header__logo"><a href="../"><img src="../img/logo.png" alt=""></a></p>
+                <ul class="header__leftList js-tooltip">
+                    <li class="header__leftListItem" data-category="1"><a href="#">サキナの美容法</a></li>
+                    <li class="header__leftListItem" data-category="2"><a href="#">商品情報</a></li>
+                    <li class="header__leftListItem" data-category="3"><a href="#">購入・体験について</a></li>
+                    <li class="header__leftListItem" data-category="4"><a href="#">ビューティーラウンジ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__right">
+            <ul class="header__rightList">
+                <li class="header__rightListItem header__rightListItem--group"><a href="../saqina/beautypartner.html">ビューティパートナー</a></li>
+                <li class="header__rightListItem header__rightListItem--cart"><a href="#">オンラインショップ</a></li>
+                <li class="header__rightListItem header__rightListItem--help"><a href="../faq/index.html">よくあるご質問</a></li>
+            </ul>
+        </div>
+
+        <div class="tooltip tooltip--category01">
+            <ul class="tooltip__linkList display__pc">
+                <li class="tooltip__linkListItem"><span></span><a href="../saqina/promise.html">サキナのお約束</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../saqina/chosen.html">サキナが選ばれる理由</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../saqina/beautypartner.html">サキナビューティーパートナーとは</a></li>
+                <li class="tooltip__linkListItem tooltip__linkListItem--sub"><span></span><a href="../saqina/seminar/index.html">スキンケアセミナー</a></li>
+            </ul>
+            <ul class="tooltip__linkList display__pc">
+                <li class="tooltip__linkListItem"><span></span><a href="../saqina/supportsystem.html">サキナのサポートシステム</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../saqina/beauty_program.html">サキナビューティープログラム</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../saqina/intro.html">ご紹介について</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../saqina/carestep.html">お手入れステップ</a></li>
+            </ul>
+            <ul class="tooltip__linkList display__pc">
+                <li class="tooltip__linkListItem"><span></span><a href="../saqina/skintype.html">スキンタイプチャート</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../saqina/season_skincare.html">季節のお手入れアドバイス</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="">How to make up</a></li>
+            </ul>
+        </div>
+
+        <div class="tooltip tooltip--category03">
+            <ul class="tooltip__linkList display__pc">
+                <li class="tooltip__linkListItem"><span></span><a href="">化粧品の購入方法</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="">エステマシンの体験方法</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="">ウィッグの体験方法</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="">エステマシンのメンテナンス</a></li>
+            </ul>
+        </div>
+
+        <div class="tooltip tooltip--category04">
+            <ul class="tooltip__linkList display__pc">
+                <li class="tooltip__linkListItem"><span></span><a href="../lounge?area=hokkaido">北海道エリア</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../lounge?area=tohoku">東北エリア</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../lounge/kanto/index.html">関東エリア</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../lounge?area=koshinetsu">甲信越・北陸エリア</a></li>
+            </ul>
+            <ul class="tooltip__linkList display__pc">
+                <li class="tooltip__linkListItem"><span></span><a href="../lounge/tyubu/index.html">東海・中部エリア</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../lounge?area=kansai">関西エリア</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../lounge?area=tyugoku">中国・四国エリア</a></li>
+                <li class="tooltip__linkListItem"><span></span><a href="../lounge?area=kyusyu">九州・沖縄エリア</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="breadcrumb display__pc">
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__listItem"><a href="../">TOP</a>＞</li>
+            <li class="breadcrumb__listItem breadcrumb__listItem--here">よくあるご質問</li>
         </ul>
     </div>
 
+    <section class="contents">
+        <div class="contents__inner">
+            <h1 class="heading__lv1">FAQ<small>よくあるご質問</small></h1>
+            <p class="contents__leadTxt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。<br>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
 
-    <div class="heroImg">
-        <div id="particles-js" class="heroImg__particles"></div>
-        <div class="heroImg__ttl">
-            <p class="heroImg__txt">Creating a world
-where everyone can expand the <span class="heroImg__txt__eme">limit</span> of their life's potential</p>
-            <p class="heroImg__subTxt">誰もが人生の可能性の限界を広げられる世界を創る</p>
+            <div class="searchBlock">
+                <p class="searchBlock__input"><input type="text" placeholder="キーワードを入力"></p>
+                <img src="../img/search.png" alt="">
+            </div>
+
+            <div class="commonBlock">
+                <div class="commonAccordion">
+                    <ul class="commonAccordion__list">
+                        <li class="commonAccordion__listItem">
+                            <a href="#" class="js-accordion">商品について<span></span></a>
+                            <ul class="commonAccordion__listInnerList">
+                                <li class="commonAccordion__listInnerListItem">
+                                    <a href="#" class="js-accordion">エステマシンについて<span></span></a>
+                                    <ul>
+                                        <li><a href="#">エステマシンは、1日に何回使えますか？</a></li>
+                                        <li><a href="#">お手入れは朝と夜どちらに行うのがいいですか？</a></li>
+                                        <li><a href="#">1日の中でお手入れ以外でもファインスチームを浴びてもいいですか？</a></li>
+                                    </ul>
+                                </li>
+                                <li class="commonAccordion__listInnerListItem">
+                                    <a href="#" class="js-accordion">エステマシンについて<span></span></a>
+                                    <ul>
+                                        <li><a href="#">エステマシンは、1日に何回使えますか？</a></li>
+                                        <li><a href="#">お手入れは朝と夜どちらに行うのがいいですか？</a></li>
+                                        <li><a href="#">1日の中でお手入れ以外でもファインスチームを浴びてもいいですか？</a></li>
+                                    </ul>
+                                </li>
+                                <li class="commonAccordion__listInnerListItem">
+                                    <a href="#" class="js-accordion">エステマシンについて<span></span></a>
+                                    <ul>
+                                        <li><a href="#">エステマシンは、1日に何回使えますか？</a></li>
+                                        <li><a href="#">お手入れは朝と夜どちらに行うのがいいですか？</a></li>
+                                        <li><a href="#">1日の中でお手入れ以外でもファインスチームを浴びてもいいですか？</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="commonAccordion__listItem">
+                            <a href="#" class="js-accordion">サービスについて<span></span></a>
+                            <ul class="commonAccordion__listInnerList">
+                                <li class="commonAccordion__listInnerListItem">
+                                    <a href="#" class="js-accordion">エステマシンについて<span></span></a>
+                                    <ul>
+                                        <li><a href="#">エステマシンは、1日に何回使えますか？</a></li>
+                                        <li><a href="#">お手入れは朝と夜どちらに行うのがいいですか？</a></li>
+                                        <li><a href="#">1日の中でお手入れ以外でもファインスチームを浴びてもいいですか？</a></li>
+                                    </ul>
+                                </li>
+                                <li class="commonAccordion__listInnerListItem">
+                                    <a href="#" class="js-accordion">エステマシンについて<span></span></a>
+                                    <ul>
+                                        <li><a href="#">エステマシンは、1日に何回使えますか？</a></li>
+                                        <li><a href="#">お手入れは朝と夜どちらに行うのがいいですか？</a></li>
+                                        <li><a href="#">1日の中でお手入れ以外でもファインスチームを浴びてもいいですか？</a></li>
+                                    </ul>
+                                </li>
+                                <li class="commonAccordion__listInnerListItem">
+                                    <a href="#" class="js-accordion">エステマシンについて<span></span></a>
+                                    <ul>
+                                        <li><a href="#">エステマシンは、1日に何回使えますか？</a></li>
+                                        <li><a href="#">お手入れは朝と夜どちらに行うのがいいですか？</a></li>
+                                        <li><a href="#">1日の中でお手入れ以外でもファインスチームを浴びてもいいですか？</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-
-    </div>
-
-    <div class="contents__bg">
-
-        <section class="block__wrap" id="flg-vision">
-            <div class="block__txt">
-                <header class="heading__block animate">
-                        <h3 class="block__header">Vision</h3>
-                        <span class="block__header__sub">私たちが目指したい未来</span>
-                </header>
-
-                <div class="block__txt__content animate">
-                    <h4 class="block__txt__header">To be myself</h4>
-                    <p class="block__txt__inner">「自分らしい働き方を定着させる」<br>
-                    <br>
-                    自分の価値観を大切につつ、能力を発揮できる環境を結びつけることで<br>
-                    働き方を選択できる社会を創りたい<br>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="block__wrap" id="flg-mission">
-            <div class="block__txt">
-                <header class="heading__block animate">
-                    <h3 class="block__header">Mission</h3>
-                    <span class="block__header__sub">私たちが果たす社会的使命</span>
-                </header>
-                <div class="block__txt__content animate">
-                    <h4 class="block__txt__header animate">Creating a world
-        where everyone can expand the limit of their life's potential</h4>
-                    <p class="block__txt__inner animate">「誰もが人生の可能性の限界を広げられる世界を創る」
-                    <br>
-                    <br>
-                    私たちは、進化し続けることによってこれまでの価値観・技術・やり方を超えて<br>
-                    世界中の人々がより良い生活を送るためのプラットフォームを生み出し続けます</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="block__wrap__gray" id="flg-member">
-            <div class="block__txt">
-                <header class="heading__block animate">
-                    <h3 class="block__header">Member</h3>
-                    <span class="block__header__sub">メンバー</span>
-                </header>
-                <div class="block__space animate">
-                    <div class="block__card">
-                        <img src="" alt="">
-                        <div class="block__card__right">
-                            <h4 class="block__card__header"></h4>
-                            <h5 class="block__card__name"></h5>
-                            <p class="block__card__inner"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="block__wrap">
-            <div class="block__txt animate">
-                <header class="heading__block">
-                    <h3 class="block__header">Address</h3>
-                    <span class="block__header__sub">会社所在地</span>
-                </header>
-                <div class="block__txt animate">
-                    <h4 class="block__txt__header">本社</h4>
-                    <p class="block__txt__inner"></p>
-                </div>
-            </div>
-        </section>
-
-        <section class="block__wrap animate">
-            <div class="block__txt">
-                <header class="heading__block">
-                    <h3 class="block__header">Contact</h3>
-                    <span class="block__header__sub">お問い合わせ</span>
-                </header>
-                <div class="cvn">
-                <a href="" target="_blank" class="cvn__btn">お問い合わせ</a>
-                </div>
-            </div>
-        </section>
-    </div>
+    </section>
 
     <footer>
         <div class="footer">
-            <address>&copy; 2018<script>new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script> テスト</address>
+
+            <div class="footer__wrapper">
+                <ul class="footer__linkList display__pc">
+                    <li class="footer__linkListItem footer__linkListItem--title"><a href="../saqina/">サキナの美容法</a></li>
+                    <li class="footer__linkListItem"><a href="../saqina/promise.html">サキナのお約束</a></li>
+                    <li class="footer__linkListItem"><a href="../saqina/chosen.html">サキナが選ばれる理由</a></li>
+                    <li class="footer__linkListItem"><a href="../saqina/beautypartner.html">サキナビューティーパートナーとは</a></li>
+                    <li class="footer__linkListItem"><a href="../saqina/seminar/index.html">スキンケアセミナー</a></li>
+                    <li class="footer__linkListItem"><a href="../saqina/supportsystem.html">サキナのサポートシステム</a></li>
+                    <li class="footer__linkListItem"><a href="../saqina/beauty_program.html">サキナビューティープログラム</a></li>
+                    <li class="footer__linkListItem"><a href="../saqina/intro.html">ご紹介について</a></li>
+                    <li class="footer__linkListItem"><a href="../saqina/carestep.html">お手入れステップ</a></li>
+                    <li class="footer__linkListItem"><a href="../saqina/skintype.html">スキンタイプチャート</a></li>
+                    <li class="footer__linkListItem"><a href="../saqina/season_skincare.html">季節のお手入れアドバイス</a></li>
+                    <li class="footer__linkListItem"><a href="">How to make up</a></li>
+                </ul>
+
+                <ul class="footer__linkList display__pc">
+                    <li class="footer__linkListItem footer__linkListItem--title"><a href="../saqina/purchase.html">購入・体験について</a></li>
+                    <li class="footer__linkListItem"><a href="">化粧品の購入方法</a></li>
+                    <li class="footer__linkListItem"><a href="">エステマシンの体験方法</a></li>
+                    <li class="footer__linkListItem"><a href="">ウィッグの体験方法</a></li>
+                    <li class="footer__linkListItem"><a href="">エステマシンのメンテナンス</a></li>
+                </ul>
+
+                <ul class="footer__linkList display__pc">
+                    <li class="footer__linkListItem footer__linkListItem--title"><a href="../lounge/index.html">ビューティーラウンジ</a></li>
+                    <li class="footer__linkListItem"><a href="../lounge?area=hokkaido">北海道エリア</a></li>
+                    <li class="footer__linkListItem"><a href="../lounge?area=tohoku">東北エリア</a></li>
+                    <li class="footer__linkListItem"><a href="../lounge/kanto/index.html">関東エリア</a></li>
+                    <li class="footer__linkListItem"><a href="../lounge?area=koshinetsu">甲信越・北陸エリア</a></li>
+                    <li class="footer__linkListItem"><a href="../lounge/tyubu/index.html">東海・中部エリア</a></li>
+                    <li class="footer__linkListItem"><a href="../lounge?area=kansai">関西エリア</a></li>
+                    <li class="footer__linkListItem"><a href="../lounge?area=tyugoku">中国・四国エリア</a></li>
+                    <li class="footer__linkListItem"><a href="../lounge?area=kyusyu">九州・沖縄エリア</a></li>
+                    <li class="footer__linkListItem footer__linkListItem--title"><a href="../experience/form-entry.html">お試し体験予約</a></li>
+                    <li class="footer__linkListItem footer__linkListItem--title"><a href="../news/index.html">お知らせ一覧</a></li>
+                </ul>
+
+                <ul class="footer__linkList display__pc">
+                    <li class="footer__linkListItem--title"><a href="../company/">企業情報</a></li>
+                    <li class="footer__linkListItem"><a href="../company/greeting.html">ごあいさつ</a></li>
+                    <li class="footer__linkListItem"><a href="../company/overview.html">会社概要</a></li>
+                    <li class="footer__linkListItem"><a href="../company/history.html">沿革</a></li>
+                    <li class="footer__linkListItem"><a href="../company/access.html">アクセス</a></li>
+                    <li class="footer__linkListItem--title"><a href="../privacypolicy.html">プライバシーポリシー</a></li>
+                    <li class="footer__linkListItem--title"><a href="../personal.html">個人情報保護方針</a></li>
+                    <li class="footer__linkListItem--title"><a href="../personalnum.html">特定個人情報保護規定</a></li>
+                    <li class="footer__linkListItem--title"><a href="../contact-form-entry.html">お問い合わせ</a></li>
+                </ul>
+
+            </div>
+            
+
+            <div class="display__sp">
+                <p class="footer__logo"><img src="../img/logo_white.png" alt=""></p>
+                <ul class="footer__linkListSp">
+                <li class="footer__linkListItem--sp"><a href="../company/">企業情報</a></li>
+                <li class="footer__linkListItem--sp"><a href="../privacypolicy.html">プライバシーポリシー</a></li>
+                <li class="footer__linkListItem--sp"><a href="../personal.html">個人情報保護方針</a></li>
+                <li class="footer__linkListItem--sp"><a href="../personalnum.html">特定個人情報保護規定</a></li>
+                <li class="footer__linkListItem--sp"><a href="../contact-form-entry.html">お問い合わせ</a></li>
+                <li class="footer__linkListItem--sp"><a href="../sitemap.html">サイトマップ</a></li>
+            </ul>
+            </div>
+
+            <ul class="footer__sns">
+                <li class="footer__snsItem"><a href=""><img src="../img/facebook.png" alt=""></a></li>
+                <li class="footer__snsItem"><a href=""><img src="../img/instagram.png" alt=""></a></li>
+                <li class="footer__snsItem"><a href=""><img src="../img/app.png" alt=""></a></li>
+                <li class="footer__snsItem"><a href=""><img src="../img/sakina.png" alt=""></a></li>
+                <li class="footer__snsItem"><a href=""><img src="../img/blog.png" alt=""></a></li>
+                
+            </ul>
+
+            <address>Copyright(C) FUYOSAQINA CO ., LTD. All Rights Reserved.</address>
         </div>
     </footer>
 
-<script src="../js/_lib/jquery-3.3.1.min.js"></script>
-<script src="../js/app.js"></script>
-<script src="../js/common.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+    <div class="spNavigation">
+        <ul class="spNavigation__linkList">
+            <li class="spNavigation__linkListItem">
+                <a href="../">
+                    <p><img src="../img/sp_home.png"></p>
+                    トップ
+                </a>
+            </li>
+            <li class="spNavigation__linkListItem">
+                <a href="#">
+                    <p><img src="../img/sp_group.png"></p>
+                    ビューティ<br>パートナー
+                </a>
+            </li>
+            <li class="spNavigation__linkListItem">
+                <a href="#">
+                    <p><img src="../img/sp_cart.png"></p>
+                    オンライン<br>ショップ
+                </a>
+            </li>
+            <li class="spNavigation__linkListItem">
+                <a href="../faq/">
+                    <p><img src="../img/sp_help-circle.png"></p>
+                    よくある<br>ご質問
+                </a>
+            </li>
+        </ul>
+        <span class="spNavBtn js-navBtn">＋</span>
+        <ul class="spNavigation__list js-accordion">
+            <li class="spNavigation__listItem">
+                <a href="#">
+                    サキナの美容法
+                </a>
+                <ul class="spNavigation__listAccordionList">
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">サキナの美容法</a>
+                    </li>
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">ブランドストーリー</a>
+                    </li>
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">お手入れステップ</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="spNavigation__listItem">
+                <a href="#">
+                    商品情報
+                </a>
+                <ul class="spNavigation__listAccordionList">
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">サキナの美容法</a>
+                    </li>
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">ブランドストーリー</a>
+                    </li>
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">お手入れステップ</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="spNavigation__listItem">
+                <a href="#">
+                    購入・体験について
+                </a>
+                <ul class="spNavigation__listAccordionList">
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">サキナの美容法</a>
+                    </li>
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">ブランドストーリー</a>
+                    </li>
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">お手入れステップ</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="spNavigation__listItem">
+                <a href="#">
+                    ビューティーラウンジ
+                </a>
+                <ul class="spNavigation__listAccordionList">
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">サキナの美容法</a>
+                    </li>
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">ブランドストーリー</a>
+                    </li>
+                    <li class="spNavigation__listAccordionListItem">
+                        <a href="#">お手入れステップ</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
-
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 </body>
 </html>

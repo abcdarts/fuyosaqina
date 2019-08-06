@@ -8,8 +8,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="icon" type="image/png" sizes="32×32" href="../img/favicon.ico">
 <link rel="apple-touch-icon" sizes="152×152" href="../img/apple-touch-icon-152×152.png">
-<link rel="stylesheet" href="../css/common/reset.css">
-<link rel="stylesheet" href="../css/common/style.css">
+<link rel="stylesheet" href="../common/css/reset.css">
+<link rel="stylesheet" href="../common/css/common.css">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -82,7 +82,7 @@
 
     </header>
 
-    <div class="breadcrumb">
+    <div class="breadcrumb display__pc">
         <ul class="breadcrumb__list">
             <li class="breadcrumb__listItem"><a href="../">TOP</a>＞</li>
             <li class="breadcrumb__listItem breadcrumb__listItem--here">ビューティーラウンジ</li>
@@ -210,8 +210,11 @@
                 </ul>
 
             </div>
+            
 
-            <ul class="footer__linkListSp">
+            <div class="display__sp">
+                <p class="footer__logo"><img src="../img/logo_white.png" alt=""></p>
+                <ul class="footer__linkListSp">
                 <li class="footer__linkListItem--sp"><a href="../company/">企業情報</a></li>
                 <li class="footer__linkListItem--sp"><a href="../privacypolicy.html">プライバシーポリシー</a></li>
                 <li class="footer__linkListItem--sp"><a href="../personal.html">個人情報保護方針</a></li>
@@ -219,6 +222,7 @@
                 <li class="footer__linkListItem--sp"><a href="../contact-form-entry.html">お問い合わせ</a></li>
                 <li class="footer__linkListItem--sp"><a href="../sitemap.html">サイトマップ</a></li>
             </ul>
+            </div>
 
             <ul class="footer__sns">
                 <li class="footer__snsItem"><a href=""><img src="../img/facebook.png" alt=""></a></li>
@@ -329,10 +333,7 @@
         </ul>
     </div>
 
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/common.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 </body>
