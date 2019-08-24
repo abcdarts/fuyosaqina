@@ -237,7 +237,7 @@ a {
 }
 
 .productBlock__top__lv2::after {
-  content: url(/img/seminar_line.png);
+  content: url(../../img/seminar_line.png);
 }
 
 .productBlock__lv2 {
@@ -249,7 +249,7 @@ a {
 }
 
 .productBlock__lv2::after {
-  content: url(/img/heading_line.png);
+  content: url(../../img/heading_line.png);
 }
 
 .productttl {
@@ -382,7 +382,7 @@ a {
 }
 
 .toparea__cat__box02__Txt01::after {
-  content: url(/img/icon_os.png);
+  content: url(../../img/icon_os.png);
   padding-left: 5px;
 }
 
@@ -983,7 +983,7 @@ a {
 }
 
 .productBlock__osTxt:after {
-  content: url(/img/icon_os.png);
+  content: url(../../img/icon_os.png);
   padding-left: 5px;
 }
 
@@ -1001,7 +1001,7 @@ a {
 }
 
 .toparea__catTxt01:after {
-  content: url(/img/icon_os.png);
+  content: url(../../img/icon_os.png);
   padding-left: 5px;
 }
 
@@ -1116,7 +1116,7 @@ a {
     display: block;
     overflow: hidden;
     height: 412px;
-    background: url(/img/sp_mv.png);
+    background: url(../../img/sp_mv.png);
     background-size: cover;
   }
   .spHeader__logoBg {
@@ -1329,10 +1329,10 @@ a {
   }
 
   .productBlock__top__lv2::after {
-    content: url(/img/heading_line_sp.png);
+    content: url(../../img/heading_line_sp.png);
   }
   .productBlock__lv2::after {
-    content: url(/img/heading_line_sp.png);
+    content: url(../../img/heading_line_sp.png);
   }
   .productarea__cat {
     width: 100%;

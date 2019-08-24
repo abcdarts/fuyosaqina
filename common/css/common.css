@@ -76,7 +76,7 @@ body {
 }
 
 .heading__lv2::after {
- content: url(/img/heading_line.png);
+ content: url(../../img/heading_line.png);
 }
 
 .heading__lv3 {
@@ -105,7 +105,7 @@ body {
  display: block;
  overflow: hidden;
  height: 334px;
- background: url(/img/sp_mv.png);
+ background: url(../../img/sp_mv.png);
  background-size: cover;
 }
 
@@ -433,7 +433,7 @@ body {
  justify-content: space-between;
  align-items: baseline;
  position: fixed;
- background: url(/img/menu_bg.png) no-repeat center center;
+ background: url(../../img/menu_bg.png) no-repeat center center;
  z-index: 100;
  bottom: 0;
 }
@@ -529,7 +529,7 @@ body {
 
 .spNavigation .spNavBtn::after {
  content: '';
- background: url(/img/bx-menu-off.png) no-repeat center center;
+ background: url(../../img/bx-menu-off.png) no-repeat center center;
  width: 15.6px;
  height: 15.6px;
  position: fixed;
@@ -546,7 +546,7 @@ body {
 
 .spNavigation .spNavBtn.is-active::after {
  content: '';
- background: url(/img/bx-menu-on.png) no-repeat center center;
+ background: url(../../img/bx-menu-on.png) no-repeat center center;
  width: 15.6px;
  height: 15.6px;
  position: fixed;
@@ -996,7 +996,7 @@ body {
  text-decoration: none;
  display: block;
  padding: 20px 25px 20px 0;
- background: url(/img/border-top.png) repeat-x left bottom;
+ background: url(../../img/border-top.png) repeat-x left bottom;
 }
 
 .commonAccordion__listInnerListItem > a.is-active span {
@@ -1043,7 +1043,7 @@ body {
  text-decoration: none;
  display: block;
  padding: 20px 0;
- background: url(/img/border-top.png) repeat-x left bottom;
+ background: url(../../img/border-top.png) repeat-x left bottom;
 }
 
 .area__block {

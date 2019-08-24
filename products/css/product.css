@@ -74,7 +74,7 @@
 }
 
 .productBlock__top__lv2::after {
-  content: url(/img/seminar_line.png);
+  content: url(../../img/seminar_line.png);
 }
 
 .productBlock__lv2 {
@@ -86,7 +86,7 @@
 }
 
 .productBlock__lv2::after {
-  content: url(/img/heading_line.png);
+  content: url(../../img/heading_line.png);
 }
 
 .productttl {
@@ -500,7 +500,7 @@
 }
 
 .productBlock__osTxt:after {
-  content: url(/img/icon_os.png);
+  content: url(../../img/icon_os.png);
   padding-left: 5px;
 }
 
@@ -518,7 +518,7 @@
 }
 
 .productBlock__catTxt01:after {
-  content: url(/img/icon_os.png);
+  content: url(../../img/icon_os.png);
   padding-left: 5px;
 }
 
@@ -586,7 +586,7 @@
 }
 
 .productBlock__braTxt04 a:after {
-  content: url(/img/icon_os.png);
+  content: url(../../img/icon_os.png);
   padding-left: 5px;
 }
 
@@ -646,10 +646,10 @@
   }
 
   .productBlock__top__lv2::after {
-    content: url(/img/heading_line_sp.png);
+    content: url(../../img/heading_line_sp.png);
   }
   .productBlock__lv2::after {
-    content: url(/img/heading_line_sp.png);
+    content: url(../../img/heading_line_sp.png);
   }
   .productarea__cat {
     width: 100%;
