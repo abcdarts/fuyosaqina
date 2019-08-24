@@ -1,0 +1,474 @@
+@charset "UTF-8";
+.seminarBlock {
+  margin: 0 0 56px;
+  padding: 24px 32px 12px;
+}
+
+.seminarBlock:last-child {
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .seminarBlock {
+    padding: 50px 0 55px;
+  }
+}
+
+.seminar__lv2 {
+  font-size: 20px;
+  color: #73d4e6;
+  text-align: center;
+  margin: 0 0;
+  padding: 0 0 20px;
+}
+
+.seminar__lv2::after {
+  content:url(/img/seminar_line.png);
+}
+
+@media screen and (max-width: 1024px) {
+  .seminar__lv2::after {
+    content:url(/img/heading_line_sp.png);
+  }
+}
+
+.seminarBlock__mainTxt {
+  font-size: 14px;
+  margin: 0 auto 18px;
+  line-height: 1.715;
+}
+
+.seminarBlock__linkTxt {
+  font-size: 13px;
+  text-align: right;
+  color: #73d4e6;
+  margin: 0 auto 25px;
+  text-decoration: none;
+}
+
+.seminarBlock__linkTxt:after {
+  content:"＞";
+  padding-left: 10px;
+}
+
+.seminarBlock__linkTxt:last-child {
+  margin: 0 auto;
+}
+
+.seminarBlock__area {
+  width: 80%;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seminarBlock__area--l {
+  width: 46.8%;
+}
+
+.seminarBlock__area--l .commonBlock--accordion {
+  margin: 0 0 15px;
+}
+
+.seminarBlock__area--r {
+  width: 46.8%;
+}
+
+.seminarBlock__area--r .commonBlock--accordion {
+  margin: 0 0 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .seminarBlock__area {
+    width: 100%;
+    display: block;
+    margin: 0 auto ;
+  }
+  .seminarBlock__area--l,
+  .seminarBlock__area--r {
+    width: 100%;
+  }
+}
+
+.seminarBlock__backbtn {
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px 30px;
+  width: 32.4%;
+  text-align: center;
+  margin: auto;
+}
+
+.seminarBlock__backbtn__d {
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px 30px;
+  width: 32.4%;
+  text-align: center;
+  margin: auto;
+}
+
+.seminarBlock__backbtn__d a{
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  color: #555555;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .seminarBlock__backbtn {
+    width: 100%;
+  }
+  .seminarBlock__backbtn {
+    width: 100%;
+  }
+}
+
+.seminarBlock__backbtn a {
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  color: #555555;
+  text-decoration: none;
+}
+
+.seminarBlock__backbtn span {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: #9dd6e1;
+  border-radius: 50%;
+  color: #fff;
+  transition: transform 0.5s ease;
+  transform: rotate(0deg);
+  top: -3px;
+  left: -45px;
+}
+
+.seminarBlock__backbtn__d span {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: #9dd6e1;
+  border-radius: 50%;
+  color: #fff;
+  transition: transform 0.5s ease;
+  transform: rotate(0deg);
+  top: -3px;
+  left: -20px;
+}
+
+.seminarBlock__backbtn span::after,.seminarBlock__backbtn__d span::after {
+  content:"";
+  width: 7px;
+  height: 7px;
+  display: block;
+  border-top: solid 1px;
+  border-right: solid 1px;
+  position: absolute;
+  transform: rotate(-135deg);
+  top: -1px;
+  bottom: 0;
+  left: 3px;
+  right: 0;
+  margin: auto;
+}
+
+.seminarBlock__date {
+  font-size: 14px;
+  color: #555555;
+  text-align: right
+}
+
+.seminarBlock__detailarea {
+  width:  100%;
+  margin: 22px auto 0;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.seminarBlock__detailarea--l {
+  width: 47.5%;
+  margin-bottom: 20px
+}
+
+.seminarBlock__detailarea--r {
+  width: 47.5%;
+  margin-bottom: 20px
+}
+
+@media screen and (max-width: 1024px) {
+  .seminarBlock__date {
+    margin-bottom: 20px;
+  }
+
+  .seminarBlock__detailarea {
+    width: 100%;
+    display: block;
+    margin: 0 auto ;
+  }
+
+  .seminarBlock__detailarea--l,
+  .seminarBlock__detailarea--r {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.d__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing:  0px 4px;
+}
+
+.d__head {
+  width: 35%;
+  background-color: #9DD6E1;
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px 0;
+}
+
+.d__head__c1 {
+  border-radius: 8px 0 0 0 ;
+  width: 35%;
+  background-color: #9DD6E1;
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px 0;
+}
+
+.d__head__c2 {
+  border-radius: 0 0 0 8px ;
+  width: 35%;
+  background-color: #9DD6E1;
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px 0;
+}
+
+.d__body {
+  width: 65%;
+  background-color: #fff;
+  color: #555555;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+.d__body__c1 {
+  border-radius: 0 8px 0 0 ;
+  width: 65%;
+  background-color: #fff;
+  color: #555555;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+.d__body__c2 {
+  border-radius: 0 0 8px 0 ;
+  width: 65%;
+  background-color: #fff;
+  color: #555555;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .d__head {
+    width: 38.5%;
+  }
+  
+  .d__head__c1 {
+    width: 38.5%;
+  }
+  
+  .d__head__c2 {
+    width: 38.5%;
+  }
+  
+  .d__body {
+    width: 61.5%;
+  }
+  
+  .d__body__c1 {
+    width: 61.5%;
+  }
+  
+  .d__body__c2 {
+    width: 61.5%;
+  }
+}
+
+.seminarBlock__note {
+  font-size: 12px;
+  margin: 0 auto 60px;
+  line-height: 1.666;
+  color: #888888;
+}
+
+@media screen and (max-width: 1024px) {
+  .seminarBlock__note {
+    margin: 0 auto;
+  }
+}
+
+.seminarBlock__monthtitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #73d4e6;
+  margin: 0 0 15px;
+}
+
+.seminarBlock__topics {
+  margin: auto;
+}
+
+.seminarBlock__topics ul:first-child {
+  border-top: #daf4f8 1px dashed;
+}
+
+.seminarBlock__topicsList {
+  border-bottom: #daf4f8 1px dashed;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+.seminarBlock__topicsCategory {
+  font-size: 11px;
+  font-weight: bold;
+  color: #24b6d1;
+  width: 16.8%;
+}
+
+@media screen and (max-width: 1024px) {
+  .seminarBlock__topicsCategory {
+    width: 50%;
+  }
+}
+
+.seminarBlock__topicsCategory:before {
+  content:"-";
+  padding-right: 10px;
+}
+
+.seminarBlock__topicsTime {
+  font-size: 12px;
+  font-family: "Ubuntu Condensed";
+  color: #555555;
+  width: 12.2%;
+}
+
+@media screen and (max-width: 1024px) {
+  .seminarBlock__topicsTime {
+    text-align: right;
+    width: 50%;
+  }
+}
+
+.seminarBlock__topicsTitle {
+  font-size: 14px;
+  color: #555555;
+  font-weight: bold;
+  width: 71%;
+}
+
+.seminarBlock__topicsTitle a {
+  color: #555555;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .seminarBlock__topicsTitle {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.seminarBlock__topics__d {
+  margin: 0 auto 20px;
+}
+
+.seminarBlock__topicsTitle__d {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.seminarBlock__topicsList__d {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px 0 0;
+}
+
+.seminarBlock__topicsCategory__d {
+  font-size: 11px;
+  font-weight: bold;
+  color: #24b6d1;
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .seminarBlock__topicsCategory__d {
+    width: 50%;
+  }
+}
+
+.seminarBlock__topicsCategory__d:before {
+  content:"-";
+  padding-right: 10px;
+}
+
+.seminarBlock__topicsTime__d {
+  font-size: 12px;
+  font-family: "Ubuntu Condensed";
+  color: #555555;
+  width: 50%;
+  text-align: right;
+}
+
+@media screen and (max-width: 1024px) {
+  .seminarBlock__topicsTime {
+    text-align: right;
+    width: 50%;
+  }
+}
+
+.seminarBlock__img__d {
+  text-align: center;
+  padding: 10px 0 25px;
+}
+
+.seminarBlock__img__d img {
+  border-radius: 8px;
+}
+
+.seminarBlock__leadTxt {
+  font-size: 15px;
+  margin: 0 auto 15px;
+}

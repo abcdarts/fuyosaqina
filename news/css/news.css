@@ -1,63 +1,255 @@
 @charset "UTF-8";
 .newsBlock {
-    background: #fff;
-    border-radius: 24px;
-    margin: 0 0 56px;
-    padding: 24px 32px 32px;
+  background: #fff;
+  border-radius: 24px;
+  margin: 0 0 56px;
+  padding: 24px 32px 32px;
+}
+
+.newsBlock:last-child {
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .newsBlock {
+    padding: 50px 55px 55px;
   }
-  
-  .newsBlock:last-child {
-    margin: 0;
+}
+
+.newsBlock__monthtitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #73d4e6;
+  margin: 0 0 15px;
+}
+
+.newsBlock__topics {
+  margin: auto;
+}
+
+.newsBlock__topics ul:first-child {
+  border-top: #daf4f8 1px dashed;
+}
+
+.newsBlock__topicsList {
+  border-bottom: #daf4f8 1px dashed;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+.newsBlock__topicsCategory {
+  font-size: 11px;
+  font-weight: bold;
+  color: #24b6d1;
+  width: 16.8%;
+}
+
+@media screen and (max-width: 1024px) {
+  .newsBlock__topicsCategory {
+    width: 50%;
   }
-  
-  @media screen and (min-width: 1024px) {
-    .newsBlock {
-      padding: 50px 55px 55px;
-    }
-  }
-  
-  .newsBlock__monthtitle {
-    font-size: 16px;
-    font-weight: bold;
-    color: #73d4e6;
-    margin: 0 0 15px;
-  }
-  
-  .newsBlock__topics {
-    margin: auto;
-  }
-  
-  .newsBlock__topics ul:first-child{
-    border-top: #DAF4F8 1px dashed;
-  }
-  
-  .newsBlock__topicsList{
-    border-bottom: #DAF4F8 1px dashed;
-    display:flex;
-    padding: 15px 0;
-  }
-  
-  .newsBlock__topicsCategory{
-      font-size: 11px;
-      font-weight: bold;
-      color: #24B6D1;
-      width: 16.8%;
-  }
-  
-  .newsBlock__topicsCategory:before {
-      content:"- ";
-  }
-  
+}
+
+.newsBlock__topicsCategory:before {
+  content: "-";
+  padding-right: 10px;
+}
+
+.newsBlock__topicsTime {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  font-family: "Ubuntu Condensed";
+  color: #555555;
+  width: 12.2%;
+}
+
+@media screen and (max-width: 1024px) {
   .newsBlock__topicsTime {
-      font-size: 12px;
-      font-family: "Ubuntu Condensed";
-      color: #555555;
-      width: 12.2%;
+    text-align: right;
+    width: 50%;
   }
-  
+}
+
+.newsBlock__topicsTitle {
+  font-size: 14px;
+  color: #555555;
+  font-weight: bold;
+  width: 71%;
+}
+
+.newsBlock__topicsTitle a {
+  color: #555555;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
   .newsBlock__topicsTitle {
-      font-size: 14px;
-      color: #555555;
-      font-weight: bold;
-      width: 71%;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
+}
+
+.newsBlock__topics__d {
+  margin: 0 auto 20px;
+}
+
+.newsBlock__topicsTitle__d {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.newsBlock__topicsList__d {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px 0 0;
+}
+
+.newsBlock__topicsCategory__d {
+  font-size: 11px;
+  font-weight: bold;
+  color: #24b6d1;
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .newsBlock__topicsCategory__d {
+    width: 50%;
+  }
+}
+
+.newsBlock__topicsCategory__d:before {
+  content:"-";
+  padding-right: 10px;
+}
+
+.newsBlock__topicsTime__d {
+  font-size: 12px;
+  font-family: "Ubuntu Condensed";
+  color: #555555;
+  width: 50%;
+  text-align: right;
+}
+
+@media screen and (max-width: 1024px) {
+  .newsBlock__topicsTime {
+    text-align: right;
+    width: 50%;
+  }
+}
+
+.newsBlock__img__d {
+  text-align: center;
+  padding: 10px 0 25px;
+}
+
+.newsBlock__img__d img {
+  border-radius: 8px;
+}
+
+.newsBlock__leadTxt {
+  font-size: 15px;
+  margin: 0 auto 15px;
+}
+
+.newsBlock__mainTxt {
+  font-size: 14px;
+  margin: 0 auto 15px;
+  line-height: 1.715;
+}
+
+
+.newsBlock__linkTxt {
+  font-size: 13px;
+  display: block;
+  text-align: right;
+  color: #73D4E6;
+  margin: 0 auto 50px;
+  text-decoration: none;
+}
+
+.newsBlock__linkTxt:after {
+  content:"＞";
+  padding-left: 10px;
+}
+
+.newsBlock__linkTxt:last-child {
+  margin: 0 auto ;
+}
+
+.newsBlock__backbtn {
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px 30px;
+  width: 32.4%;
+  text-align: center;
+  margin: auto;
+}
+
+.newsBlock__backbtn__d {
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px 30px;
+  width: 32.4%;
+  text-align: center;
+  margin: auto;
+}
+
+.newsBlock__backbtn__d a{
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  color: #555555;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .newsBlock__backbtn {
+    width: 100%;
+  }
+  .newsBlock__backbtn {
+    width: 100%;
+  }
+}
+
+.newsBlock__backbtn a {
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  color: #555555;
+  text-decoration: none;
+}
+
+.newsBlock__backbtn span,.newsBlock__backbtn__d span {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: #9dd6e1;
+  border-radius: 50%;
+  color: #fff;
+  transition: transform 0.5s ease;
+  transform: rotate(0deg);
+  top: -3px;
+  left: -45px;
+}
+
+.newsBlock__backbtn span::after,.newsBlock__backbtn__d span::after {
+  content:"";
+  width: 7px;
+  height: 7px;
+  display: block;
+  border-top: solid 1px;
+  border-right: solid 1px;
+  position: absolute;
+  transform: rotate(-135deg);
+  top: -1px;
+  bottom: 0;
+  left: 3px;
+  right: 0;
+  margin: auto;
+}
