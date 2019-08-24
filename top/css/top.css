@@ -363,7 +363,7 @@ a {
   width: 762px;
   padding: 30px 84px 213px;
   margin: 0 auto 60px;
-  background: #fff url("/img/top_cat_03.png") no-repeat center bottom;
+  background: #fff url("../../img/top_cat_03.png") no-repeat center bottom;
   position: relative;
   border-radius: 8px;
   -webkit-filter: drop-shadow(0px 8px 24px rgba(97, 173, 186, 0.16));
@@ -1272,7 +1272,7 @@ a {
     padding: 30px;
     border-radius: 32px;
     margin: 0 auto 60px;
-    background: #fff url("/img/top_cat_03_sp.png") no-repeat right bottom;
+    background: #fff url("../../img/top_cat_03_sp.png") no-repeat right bottom;
     -webkit-filter: drop-shadow(0px 8px 24px rgba(97, 173, 186, 0));
     filter: drop-shadow(0px 8px 24px rgba(97, 173, 186, 0));
   }

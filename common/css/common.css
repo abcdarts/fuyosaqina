@@ -34,7 +34,7 @@ body {
 
 @media screen and (min-width: 1024px) {
  body {
-  background: #DAF4F8 url("/img/main-bg.png") no-repeat center top;
+  background: #DAF4F8 url("../../img/main-bg.png") no-repeat center top;
  }
 }
 
@@ -230,7 +230,7 @@ body {
  content: '';
  width: 26px;
  height: 26px;
- background: url("/img/group.png") no-repeat center top;
+ background: url("../../img/group.png") no-repeat center top;
  background-size: 26px 22px;
  position: absolute;
  top: 0;
@@ -242,7 +242,7 @@ body {
  content: '';
  width: 26px;
  height: 26px;
- background: url("/img/cart.png") no-repeat center top;
+ background: url("../../img/cart.png") no-repeat center top;
  background-size: 23px 21px;
  position: absolute;
  top: 0;
@@ -254,7 +254,7 @@ body {
  content: '';
  width: 26px;
  height: 26px;
- background: url("/img/help-circle.png") no-repeat center top;
+ background: url("../../img/help-circle.png") no-repeat center top;
  background-size: 24px 24px;
  position: absolute;
  top: 0;
